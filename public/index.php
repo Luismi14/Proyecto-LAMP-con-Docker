@@ -12,7 +12,7 @@
                 echo '<h1>Usuarios del sistema</h1>';
                 $conn = mysqli_connect('db','root','root.pa55');
                 $database = mysqli_select_db($conn, 'universidad');
-                $query = 'SELECT * FROM Usuarios';
+                $query = 'SELECT * FROM estudiantes';
                 $result = mysqli_query($conn, $query);
                 echo '<table class="table table-striped">';
                 echo '<thead><tr><th>ID</th><th>Nombre del Usuario</th></tr></thead>';
